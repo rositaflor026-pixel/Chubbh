@@ -1,0 +1,24 @@
+plugins {
+    id 'com.android.application' version '8.6.1'
+}
+
+android {
+    namespace 'com.saltopixel.game'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.saltopixel.game'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['.']
+            manifest.srcFile 'AndroidManifest.xml'
+            assets.srcDirs = ['.']
+        }
+    }
+}
